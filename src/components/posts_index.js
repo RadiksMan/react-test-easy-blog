@@ -8,7 +8,7 @@ import {fetchPosts} from '../actions/index';
 class PostsIndex extends Component {
 
     componentWillMount(){
-        console.log('adasdasda')
+        this.props.fetchPosts();
     }
 
     render(){
