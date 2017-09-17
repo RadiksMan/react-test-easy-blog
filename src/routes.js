@@ -4,12 +4,14 @@ import { Route, BrowserRouter as Router,Switch} from 'react-router-dom';
 
 import App from './components/App';
 import PostsIndex from './components/posts_index';
+import PostsNew from './components/posts_new';
 
 const Routes = () => (
     <Router>
         <Switch>
             {/*<Route exact path="/" component={App} />*/}
-            <Route path="/" component={PostsIndex}/>
+            <Route exact path="/" component={PostsIndex}/>
+            <Route path="/posts/new" component={PostsNew}/>
 
             <Route component={NoMatch}/>
        </Switch>
